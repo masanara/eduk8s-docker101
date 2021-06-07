@@ -1,0 +1,42 @@
+apiVersion: training.eduk8s.io/v1alpha2
+kind: Workshop
+metadata:
+  name: docker101
+spec:
+  title: docker Hands-on
+  description: docker hands-on
+  vendor: eduk8s.io
+  difficulty: beginner
+  duration: 60m
+  url: https://github.com/masanara/eduk8s-docker101
+  content:
+    image: harbor.nsx.techlab.netone.co.jp/library/eduk8s:0.5
+    files: github.com/masanara/eduk8s-docker101
+  session:
+    namespaces:
+      budget: small
+    applications:
+      registry:
+        enabled: true
+      docker:
+        enabled: true
+        memory: 1Gi
+      terminal:
+        enabled: true
+        layout: split
+      editor:
+        enabled: true
+    ingresses:
+    - name: access1
+      port: 8080
+    - name: access2
+      port: 8081
+    - name: access3
+      port: 8082
+    dashboards:
+    - name: port8080
+      url: "$(ingress_protocol)://$(session_namespace)-access1.$(ingress_domain)/"
+    - name: port8081
+      url: "$(ingress_protocol)://$(session_namespace)-access2.$(ingress_domain)/"
+    - name: port8082
+      url: "$(ingress_protocol)://$(session_namespace)-access3.$(ingress_domain)/"

@@ -1,0 +1,13 @@
+apiVersion: training.eduk8s.io/v1alpha1
+kind: TrainingPortal
+metadata:
+  name: docker101
+spec:
+  portal:
+    registration:
+      type: anonymous
+  workshops:
+  - name: docker101
+    capacity: 3
+    expires: 60m
+    orphaned: 5m

@@ -1,0 +1,18 @@
+name: docker handson
+
+modules:
+    activate:
+    - workshop-overview
+    - setup-environment
+    - exercises/01-image
+    - exercises/02-run
+    - exercises/03-network
+    - exercises/04-remove
+    - exercises/05-resources
+    - exercises/06-background
+    - exercises/07-host-network
+    - exercises/08-volume
+    - exercises/09-log
+    - exercises/10-build
+    - exercises/11-registry
+    - workshop-summary
