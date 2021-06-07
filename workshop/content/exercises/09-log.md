@@ -20,7 +20,7 @@ docker exec nginx1 ls -l /var/log/nginx/access.log
 docker logs -f nginx1
 ```
 
-[コンテナが起動するポート]({{ ingress_protocol }}://{{ session_namespace }}-access1.{{ ingress_domain }})にアクセスすると、アクセスログ・エラーログを確認することができます。
+[コンテナが起動するポート]({{ ingress_protocol }}://{{ session_namespace }}-access1.{{ ingress_domain }})にアクセスしてページをリロードすると、アクセスログを確認することができます。
 
 アクセスログを確認したら、ログ出力を停止します。
 

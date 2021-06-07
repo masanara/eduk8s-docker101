@@ -20,6 +20,3 @@ docker attach mycentos
 
 *** ```Ctrl+p, Ctrl+q```と入力して、コンテナのシェルから切断します。*** (切断しないと次ページ移行のハンズオンが正しく動作しません)
 
-```execute
-<ctrl+p><ctrl+q>
-```

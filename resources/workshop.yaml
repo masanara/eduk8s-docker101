@@ -23,9 +23,6 @@ spec:
         memory: 1Gi
       terminal:
         enabled: true
-        layout: split
-      editor:
-        enabled: true
     ingresses:
     - name: access1
       port: 8080

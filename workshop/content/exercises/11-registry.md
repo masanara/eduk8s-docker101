@@ -1,6 +1,6 @@
 コンテナイメージはRegistry上にアップロードして共有することが可能です。Registryへアップロードする際はコンテナイメージ名(タグ)にレジストリ名を含めます。
 
-本環境では内部レジストリとして {{ registyr_host }} を利用します。
+本環境では内部レジストリとして {{ registry_host }} を利用します。
 
 レジストリにログインします。本環境ではすでにログイン済みであるため認証情報は求められませんが、通常レジストリのユーザー名・パスワードを求められます。
 
@@ -44,4 +44,7 @@ Registry上のイメージを指定してコンテナを起動します。
 docker run -itd -p 8082:80 {{ registry_host }}/mynginx:latest
 ```
 
+起動したコンテナにアクセスして、起動を確認します。
+
+{{ ingress_protocol }}://{{ session_namespace }}-access3.{{ ingress_domain }}
 

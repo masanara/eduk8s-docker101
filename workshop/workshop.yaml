@@ -3,7 +3,7 @@ name: docker handson
 modules:
     activate:
     - workshop-overview
-    - setup-environment
+    - docker-installation
     - exercises/01-image
     - exercises/02-run
     - exercises/03-network

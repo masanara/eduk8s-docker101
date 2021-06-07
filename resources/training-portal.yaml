@@ -8,6 +8,6 @@ spec:
       type: anonymous
   workshops:
   - name: docker101
-    capacity: 3
+    capacity: 5
     expires: 60m
     orphaned: 5m
