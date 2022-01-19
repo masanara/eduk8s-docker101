@@ -30,4 +30,3 @@ docker run -itd --name nginx1 -p 8080:80 quay.io/mnara/nginx
 ```
 
 起動したコンテナを確認すると、コンテナの80番ポートがホストの8080番ポートにマッピングされています。ハンズオンターミナル上部のport 8080タブを開くと、8080ポートにアクセスしてnginxが起動したことを確認することができます。
-[ここ]({{ ingress_protocol }}://{{ session_namespace }}-access1.{{ ingress_domain }})からも確認することが可能です。
